@@ -6,7 +6,7 @@ Local multicast addresses are in ff02::/12
 
 DNS A records: IPv4 addresses
 DNS AAAA records: IPv6 addresses
-(because IPv4 is four times as many bits...)
+(because IPv6 is four times as many bits...)
 
 There is /no/ network address translation, by design (this has made a lot of people angry)
 
