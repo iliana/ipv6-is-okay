@@ -1,0 +1,21 @@
+# Combating IPv4 exhaustion
+
+TLS Server Name Indication extension
+Client includes hostname in TLS handshake
+
+Prior to this, each SSL/TLS server needed its own public IP address:
+* certificates generally only support one domain
+* no way for server to pick which certificate to choose
+* sadness and general distraught
+
+(This is why load balancers with dedicated IPs cost a lot of money!)
+
+Almost(!) all commonly-used TLS servers/clients now support SNI
+
+
+
+
+
+
+
+[//]: # vim: set nonumber ft=markdown:

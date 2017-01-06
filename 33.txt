@@ -1,0 +1,21 @@
+# IPv6 basics
+
+There is no ARP, only Neighbor Discovery Protocol
+
+Five ICMP6 packet types:
+
+* Router solicitation
+* Router advertisement
+* Neighbor solicitation
+* Neighbor advertisement
+* Redirect
+
+
+
+
+
+
+
+
+
+[//]: # vim: set nonumber ft=markdown:

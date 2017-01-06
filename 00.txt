@@ -1,0 +1,21 @@
+# IPv6 is okay
+ian weller, 2017-01-05
+
+1. A brief summary of the internet
+2. IPv4 address exhaustion
+3. The basics of IPv6
+4. Stateless and stateful configuration
+5. The slooooooooooow transition to IPv6
+6. What IPv6 looks like in EC2
+7. Some weird problems I've run into
+
+
+
+
+
+
+
+
+
+
+[//]: # vim: set nonumber ft=markdown:

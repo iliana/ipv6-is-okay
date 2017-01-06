@@ -1,0 +1,29 @@
+# What IPv6 looks like in EC2
+
+IPv6 in EC2 is VPC-only, for very very good reasons
+
+Regions have really big IPv6 blocks (us-east-1 has a /33?)
+Every VPC gets a globally routable /56 (us-east-1: 8388608 VPCs)
+Every subnet gets a /64 as part of that
+Or, you can bring your own network blocks with Direct Connect
+
+Router advertisements contain no prefix; include the "M" flag
+Instance is responsible for running a DHCPv6 client
+Past that, everything works pretty much like IPv4
+
+ENIs are limited to 8 IPv6 addresses currently
+No ability to route an entire sub-subnet to an ENI
+
+
+
+
+
+
+
+## Post-speaking notes
+
+A very good question I received during the presentation was (referring to the prior rant on DHCPv6): "If DHCPv6 is so bad, why didn't we use SLAAC for IPv6 in VPC?"
+
+The answer is because there is absolutely no guaranteed way to know what IP address the instance will use if you tell it to use SLAAC. VPC drops packets coming from an address it doesn't recognize as belonging to an interface, and you wouldn't be able to show the addresses in the console or allow users to configure additional addresses in a reasonable fashion.
+
+[//]: # vim: set nonumber ft=markdown:

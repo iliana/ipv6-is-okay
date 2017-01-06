@@ -1,0 +1,21 @@
+# The slooooooooooow transition to IPv6
+
+* Tunneling protocols: 6in4, 6to4, Teredo
+* "We can't get any IPv4": NAT64, carrier-grade NAT
+* "IPv6 is too hard": people do nothing for twenty years
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[//]: # vim: set nonumber ft=markdown:

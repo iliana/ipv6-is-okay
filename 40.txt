@@ -1,0 +1,21 @@
+# Stateless address autoconfiguration (SLAAC)
+
+SLAAC is merely the existence of a prefix in a Router Advertisement;
+the client picks an address, does duplicate address detection, and goes
+
+SLAAC just fills in an EUI-64 in the last 64 bits of a /64 prefix
+
+Windows generates a random DUID, which becomes an EUI-64 (somehow)
+Linux converts the 48-bit MAC address (actually an EUI-48) into EUI-64:
+
+```
+00:53:53   :   c0:ff:ee    |  Standard MAC address
+00:53:53:ff:fe:c0:ff:ee    |  Insert ff:fe in the middle
+02:53:53:ff:fe:c0:ff:ee    |  Flip the seventh bit
+fe80::0253:53ff:fec0:ffee  |  In link local address form
+```
+
+Some people don't like their MAC address being their public IP address
+RFC 4941: "Privacy Extensions for Stateless Address Autoconfiguration"
+
+[//]: # vim: set nonumber ft=markdown:

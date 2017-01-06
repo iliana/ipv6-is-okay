@@ -1,0 +1,21 @@
+# IPv6 basics
+
+Global scope (generally) addresses start with '2' (2000::/4)
+Link local addresses are in fe80::/64
+Local multicast addresses are in ff02::/12
+
+DNS A records: IPv4 addresses
+DNS AAAA records: IPv6 addresses
+(because IPv4 is four times as many bits...)
+
+There is /no/ network address translation, by design (this has made a lot of people angry)
+
+The first and last address of a network are still usable
+
+
+
+
+
+
+
+[//]: # vim: set nonumber ft=markdown:

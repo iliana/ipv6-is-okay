@@ -1,0 +1,33 @@
+# Stateful address configuration (DHCPv6)
+
+[insert rant here]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+## Speaker notes
+
+This rant mostly consisted of complaints about DHCP *in general*, not just for IPv6, being far too complex. But on top of that, I also complained that DHCPv6 looks absolutely nothing like DHCPv4, and basic tasks that you might want to do, such as fixing a specific MAC address to a specific IP, is completely impossible in ISC DHCP and explicitly not recommended by RFCs.
+
+This is in addition to the fact that your no-frills Linux server install doesn't use any sort of network daemon (e.g. NetworkManager, systemd-networkd) by default but instead a series of shell scripts, each more complicated than the last, thus being unable to handle an "M" flag from an ICMP6 Router Advertisement packet and thus configuring no addresses.
+
+I explained that we worked around this issue in Amazon Linux by just running dhclient -6 on every interface since 2016.09.
+
+The rant was well received.
+
+[//]: # vim: set nonumber ft=markdown:

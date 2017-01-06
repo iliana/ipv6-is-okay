@@ -1,0 +1,21 @@
+# Combating IPv4 exhaustion
+
+Classless inter-domain routing (CIDR)
+Represents a subnet bitmask by the number of fixed bits
+
+206.81.80.0/22 --> 206.81.80.0 through 206.81.83.255
+            ^^
++----------+----------+----------+----------+
+|   206    |    81    |    80    |    0     |
+| 11001110 | 01010001 | 01010000 | 00000000 |
++----------+----------+----------+----------+
+  ^^^^^^^^   ^^^^^^^^   ^^^^^^^^   ^^^^^^^^
+  |       22 fixed bits      ||  10 bits  |
+
+2^(32-22) = 2^10 = 1024 addresses
+
+Class A: 16 777 216 addresses -- /8
+Class B:     65 536 addresses -- /16
+Class C:        256 addresses -- /24
+
+[//]: # vim: set nonumber ft=markdown:

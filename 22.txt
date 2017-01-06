@@ -1,0 +1,21 @@
+# Combating IPv4 exhaustion
+
+Network address translation (NAT)
+RFC1918 private address spaces
+
+Internet-connected computers don't need publicly routable addresses
+
+10.0.0.0/8     -- 16 777 216 addresses (class A)
+172.16.0.0/12  --  1 048 576 addresses
+192.168.0.0/16 --     65 536 addresses (class B)
+
+(Clearly no company would ever need more than a /8 of addresses!)
+
+
+
+
+
+
+
+
+[//]: # vim: set nonumber ft=markdown:

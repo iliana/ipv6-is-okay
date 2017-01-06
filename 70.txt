@@ -1,0 +1,29 @@
+# Some weird problems I've run into
+
+* ICMP6 redirects and router firewalls
+* Source address selection woes
+* Linux server installs just don't start DHCPv6 by default :(
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+## Speaker notes
+
+The ICMP6 redirect problem I hit is described at https://github.com/714warren/network/issues/5.
+
+Source address selection is described in RFC 3484 -- the specific issue I was having was the AS64241 router having two addresses (2001:504:16::faf1, for Seattle Internet Exchange routing, and 2620:fc:c000::, our actually globally routable address) and the source selection algorithm making it all the way to Rule 8, "Use longest matching prefix". This resulted in packets being sent from the AS64241 router to, say, Google, to not route, because 2001:504:16::/48 is ACL'd off of the internet as it is an eBGP routing network.
+
+[//]: # vim: set nonumber ft=markdown:

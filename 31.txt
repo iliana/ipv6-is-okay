@@ -1,0 +1,21 @@
+# IPv6 basics
+
+CIDR is /the/ routing language for IPv6
+
+2600::/29 -- 29 fixed bits, 99 remain
+2^(128-29) = 2^99 = 6.338 e29 addresses
+
+Stateless autoconfig (we'll get into that) requires a /64 subnet,
+so networks are most commonly a /64 (as recommended by RFC)
+
+ARIN (American Registry for Internet Numbers) will generally allocate a /48 for each "site"
+(but they're happy to hand out more)
+There are 17 592 186 044 416 globally-routable /48s (for now)
+
+Regional registries are still handing out blocks from /12s delegated in 2006
+
+You can get a /60 from Comcast et al (with DHCPv6 prefix delegation)
+
+
+
+[//]: # vim: set nonumber ft=markdown:

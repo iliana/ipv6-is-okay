@@ -1,0 +1,27 @@
+# A brief summary of the internet
+
+Your machine --> switches and routers --> someone else's machine
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+## Speaker notes
+
+I demoed a `traceroute -6` from my host on AS64241 to Google Public DNS, and explained that there are routers involved.
+
+[//]: # vim: set nonumber ft=markdown:

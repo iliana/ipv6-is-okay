@@ -1,0 +1,21 @@
+# How did we run out of IPv4 addresses?
+
+In the beginning, address blocks were allocated in three sizes:
+
+* Class A: 16 777 216 addresses
+* Class B:     65 536 addresses
+* Class C:        256 addresses
+
+There are still some universities with Class A address blocks.
+
+
+
+
+
+
+
+
+
+
+
+[//]: # vim: set nonumber ft=markdown:

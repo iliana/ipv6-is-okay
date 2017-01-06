@@ -1,0 +1,21 @@
+# IPv6 basics
+
+Addresses are 128 bits
+Commonly represented as hexadecimal:
+* each digit is a "nibble" (a half byte -- bad pun warning)
+* each group of four nibbles ("quibble") separated by colons
+* leading zeroes of quibbles are removed
+* groups of zero quibbles are replaced with :: (but only once)
+
+2620:00fc:c000:0000:0000:0000:0000:0042
+                     = 2620:fc:c000::42
+
+
+
+
+
+
+
+
+
+[//]: # vim: set nonumber ft=markdown:
